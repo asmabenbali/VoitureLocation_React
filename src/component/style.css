@@ -1,0 +1,104 @@
+/* style.css */
+
+/* Couleurs principales */
+:root {
+    --primary-color: #990011;
+    --secondary-color:  #FCF6F5;
+    --hover-btn-color:#ce0018;
+}
+.titre {
+    color:var(--primary-color) ; /* Couleur rouge */
+    text-align: center; /* Centrer le texte */
+    margin-bottom: 20px; /* Ajoute un espace en bas */
+}
+
+
+/* Conteneur principal */
+.container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-control {
+    width: 100%; /* Cela fera en sorte que les inputs prennent toute la largeur disponible */
+    max-width: 600px; /* Vous pouvez ajuster la largeur maximale comme vous le souhaitez */
+}
+
+/* Style du formulaire */
+.form-control {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    height: 35px;
+    color: var(--primary-color);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+/* Style des labels */
+label {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Bouton Ajouter */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--secondary-color);
+    font-weight: 600;
+    padding: 10px;
+}
+
+.btn-primary:hover {
+    /* background-color: #011f28; */
+    /* background-color: #011f28; */
+    background-color: var(--hover-btn-color);
+}
+
+/* Style de la table */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--secondary-color);
+}
+
+.table thead {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    border-color: var(--primary-color);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(2, 52, 63, 0.1);
+}
+
+.table img {
+    border-radius: 4px;
+}
+
+/* Bouton Supprimer */
+.btn-danger {
+    background-color: #c82333;
+    color: #fff;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #a71d2a;
+}
+
+
+
